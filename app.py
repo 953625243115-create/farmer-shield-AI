@@ -141,4 +141,4 @@ with gr.Blocks() as app:
     btn1.click(worked, outputs=fb)
     btn2.click(not_worked, outputs=fb)
 
-app .launch( server _name="0:0.0.0",server_port=10000)
+app.launch( server_name="0.0.0.0",server_port=10000)
