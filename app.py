@@ -141,4 +141,7 @@ with gr.Blocks() as app:
     btn1.click(worked, outputs=fb)
     btn2.click(not_worked, outputs=fb)
 
-app.launch( server_name="0.0.0.0",server_port=10000)
+import os
+port = int(os.environ.get("PORT", 7860))
+app.launch(server_name="0.0.0.0", server_port=port)
+
